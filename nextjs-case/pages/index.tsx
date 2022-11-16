@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-import Navigation from '../components/Navigation'
-import Header from '../components/Header'
-import Main from '../components/Main'
-import styled from 'styled-components'
-
-const Wrapper = styled.div`
-  background-color: #141b24;
-  height: 100vh;
-`
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+import Main from '../components/Main';
 
 export default function Home() {
   return (
     <Wrapper>
-      <Navigation/>
-      <Header/>
-      <Main/>
+      <Navigation />
+      <Header />
+      <Main />
     </Wrapper>
-  )
+  );
 }
+
+const Wrapper = styled.div`
+  background-color: var(--darkBg);
+  height: 100vh;
+`;
